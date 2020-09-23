@@ -1,0 +1,441 @@
+@import url(normalize.css);
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #545454;
+    line-height: 22px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+.fcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c-2{
+    width: 50%;
+}
+
+.double i{
+    font-size: 60px;
+    color: #ffb400;
+    margin-right: 25px;
+    transition: all 200ms;
+}
+
+i:hover {
+    font-size: 70px;
+    color: BLACK;
+}
+
+a {
+    color: #545454;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 0;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 50px 0 10px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.col-6 {
+    float: left;
+    position: relative;
+	width: 50%;
+}
+
+.margin-bottom50 {
+    margin-bottom: 50px;
+}
+
+.margin-bottom40 {
+    margin-bottom: 40px;
+}
+
+.margin-bottom30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom10 {
+    margin-bottom: 10px;
+}
+
+.margin-top50 {
+    margin-top: 50px;
+}
+
+.margin-top40 {
+    margin-top: 40px;
+}
+
+.margin-top30 {
+    margin-top: 30px;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.margin-top10 {
+    margin-top: 10px;
+}
+
+.no-border-bottom {
+    border-bottom: none !important;
+}
+
+.margin-right30 {
+    margin-right: 30px;
+}
+
+.gray-bg {
+    background-color: #f7f7f7;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 0px;
+    max-width: none;
+}
+
+.container-sub {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container-sub::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.leftPanel {
+    width: 200px;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+}
+
+#menu1 {
+    overflow: hidden;
+    padding: 0px;
+    width: 200px;
+}
+
+.menu {
+    position: fixed;
+    z-index: 100;
+    color: #f8f8f8;
+    background: #000;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+.menu nav {
+    top: 183px;
+    margin-top: 17px;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+    width: 200px !important;
+}
+
+.menu nav a {
+    display: block;
+    padding: 13px 0;
+    text-align: left;
+    outline: none;
+    margin: 0 30px;
+    border-bottom: 1px solid #333;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    transition-duration: .2s;
+}
+
+.menu nav a span.active {
+    color: #ffb400;
+    font-weight: 600;
+}
+
+.menu nav a:hover {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+.menu nav a span:nth-child(2) {
+    display: block;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 3px;
+}
+
+.menu-link {
+    display: none;
+}
+
+.jspContainer {
+    width: 200px;
+}
+
+.jspPane {
+    padding: 0px;
+    top: 0px;
+    width: 200px;
+}
+
+.rightPanel {
+    position: absolute;
+    left: 200px;
+    right: 0px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.rightPanel-inner {
+    width: 7356px;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.box {
+    width: 804px;
+    height: 100%;
+    float: left;
+    transition: background 0.3s linear;
+}
+
+.box:last-child {
+    width: 85vw;
+}
+
+.inner {
+    padding: 70px;
+}
+
+.title-divider {
+    width: 70px;
+    height: 5px;
+    background-color: #ffb400;
+    margin: 30px 0 50px 0;
+}
+
+.full-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+    margin: 50px 0 0 0;
+    clear: both;
+}
+
+.next {
+    cursor: move;
+}
+
+.about {
+}
+
+.about .inner {
+    width: 50%;
+}
+
+.about img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.about-con {
+    width: 100%;
+}
+
+.about-con ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-con ul li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 12px 0;
+}
+
+.about-con ul li:first-child {
+    padding: 0 0 12px 0;
+}
+.about img.signature {
+    position: inherit;
+    top: auto;
+    margin: 20px 0 0 0;
+}
+
+.skills {
+}
+
+.skill-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-list ul li {
+    padding: 5px 0 0;
+    list-style: none;
+}
+
+.skills-con h4 {
+    width: 65%;
+}
+
+.skill-list ul li:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    margin: 0 5px 0 0;
+}
+
+.skills-con .col-6:hover .chart .percent {
+    font-size: 45px;
+    color: #000;
+    transition-duration: .1s;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 154px;
+    height: 154px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 21px 0 0 0;
+    color: #ffb400;
+}
+
+.percent:after {
+    content: "%";
+    margin-left: 0.1em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 100;
+}
+
+.chart-text {
+    margin: 30px 0 0 0
+}
+
+.chart-text p {
+    margin: 10px 0 0 15px
+}
+
+.chart-text h4 {
+    margin: 0 0 0 15px;
+}
+
+.experience-con .icon-block i {
+    font-size: 60px;
+    color: #ffb400;
+    margin: 8px 0 0
+}
+
+.experience-con h5 {
+    margin: 5px 0 7px 0
+}
+
+.experience-con span {
+    font-size: 16px;
+    color: #000;
+}
+
+.experience-con strong {
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 0 5px 0
+}
+
+.experience-details {
+    float: left;
+}
+
+.experience-details i {
+    transition-duration: .2s;
+}
+
+.experience-details:hover i {
+    font-size: 73px;
+    color: #000;
+}
+
+.experience-details:hover .col-3 {
+    width: 29%;
+    transition-duration: .2s;
+}
+
+.fa-icon {
+    color: white;
+    font-size: 30px !important;
+    margin-left: 13px;
+    margin-right: 23px;
+}
